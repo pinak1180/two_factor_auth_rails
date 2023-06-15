@@ -2,6 +2,7 @@
 
 module Devise
   module Strategies
+    # imporved version of https://github.com/tinfoil/devise-two-factor/blob/main/lib/devise_two_factor/strategies/two_factor_backupable.rb
     class RecoveryCodeAuthenticatable < Devise::Strategies::Base
       def authenticate!
         resource = mapping.to.find(session[:otp_user_id])
