@@ -3,7 +3,7 @@
 FactoryBot.define do
   factory :user do
     sequence(:email) { |i| "user#{i}@example.com" }
-    password { "letmein" }
+    password { "letmeIn@200" }
     trait :with_otp do
       otp_required_for_login { true }
 
