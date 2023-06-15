@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwoFactorAuthRails</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+  </head>
+
+  <body>
+  <nav>
+    <% if user_signed_in? %>
+      <%= button_to 'Logout', destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to 'Login', new_user_session_path %>
+    <% end %>
+  </nav>
+  <section>
+    <% flash.each do |name, msg| -%>
+      <%= content_tag :dialog, msg, role: name %>
+    <% end %>
+  </section>
+    <%= yield %>
+  </body>
+</html>
