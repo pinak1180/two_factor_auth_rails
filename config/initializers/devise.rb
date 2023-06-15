@@ -8,6 +8,7 @@
 #
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
+Dir[Rails.root.join("lib/devise-two-factor/strategies/*.rb")].each { |file| require file }
 Devise.setup do |config|
   config.warden do |manager|
     manager.default_strategies(scope: :user).unshift(:two_factor_authenticatable)
@@ -23,7 +24,6 @@ Devise.setup do |config|
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
-  require Rails.root.join("lib/devise-two-factor/strategies/otp_attempt_authenticatable.rb")
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,

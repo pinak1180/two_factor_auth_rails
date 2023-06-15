@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Users
-  module Otp
+  module RecoveryCode
     class SessionsController < DeviseController
       include OtpSessionExpirable
       before_action :expire_otp_session!
@@ -16,7 +16,7 @@ module Users
 
       def create
         resource = warden.authenticate!(
-          :otp_attempt_authenticatable,
+          :recovery_code_authenticatable,
           {
             scope: resource_name,
             recall: "#{controller_path}#new",
