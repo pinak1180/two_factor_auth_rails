@@ -36,11 +36,33 @@
 
 
 ## Screenshots
+Login Page
+![image](https://github.com/pinak1180/two_factor_auth_rails/assets/3368193/ed09474d-a90a-4258-8eb7-a4988078233e)
 
-![image](https://www.awesomescreenshot.com/image/40783543?key=3435942081f6ec555e379f6e980b8d90)
+successfull login/signup
+
+![image](https://github.com/pinak1180/two_factor_auth_rails/assets/3368193/f7b2b922-f89c-4238-aa03-421377978d4c)
+
+Enable 2FA via app
+
+![image](https://github.com/pinak1180/two_factor_auth_rails/assets/3368193/5282103d-b5c7-4a66-a727-a8caaefd2c11)
+
+Scan the Qr and validate the otp
+
+![image](https://github.com/pinak1180/two_factor_auth_rails/assets/3368193/39ebe4cf-1aa4-4676-a483-0e19538dee15)
+
+successfull activation leads to backup codes
+
+![image](https://github.com/pinak1180/two_factor_auth_rails/assets/3368193/1f073503-94fb-48d6-8b2b-0ea74df7edcf)
 
 
+option to disable 2fa & regenerate backup codes 
 
+![image](https://github.com/pinak1180/two_factor_auth_rails/assets/3368193/180a3d12-448a-41d3-acd4-7f4b88700734)
+
+2 form flow for 2fa login after successfully adding username and password
+
+![image](https://github.com/pinak1180/two_factor_auth_rails/assets/3368193/26bc6130-8451-4aed-a97f-6b5a5ea368a6)
 
 
 
