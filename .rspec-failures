@@ -1,14 +1,22 @@
 example_id                                                               | status  | run_time        |
 ------------------------------------------------------------------------ | ------- | --------------- |
-./spec/helpers/dashboard_helper_spec.rb[1:1]                             | pending | 0.00001 seconds |
-./spec/helpers/home_helper_spec.rb[1:1]                                  | pending | 0 seconds       |
-./spec/helpers/two_factor_authentications_helper_spec.rb[1:1]            | pending | 0 seconds       |
-./spec/requests/dashboard_spec.rb[1:1:1]                                 | pending | 0 seconds       |
+./spec/helpers/dashboard_helper_spec.rb[1:1]                             | pending | 0.00002 seconds |
+./spec/helpers/home_helper_spec.rb[1:1]                                  | pending | 0.00001 seconds |
+./spec/helpers/two_factor_authentications_helper_spec.rb[1:1]            | pending | 0.00001 seconds |
+./spec/models/user_spec.rb[1:1:1]                                        | passed  | 0.0531 seconds  |
+./spec/models/user_spec.rb[1:1:2]                                        | passed  | 0.0042 seconds  |
+./spec/models/user_spec.rb[1:1:3]                                        | passed  | 0.00463 seconds |
+./spec/models/user_spec.rb[1:1:4]                                        | passed  | 0.00374 seconds |
+./spec/models/user_spec.rb[1:1:5]                                        | passed  | 0.00363 seconds |
+./spec/models/user_spec.rb[1:1:6]                                        | passed  | 0.00441 seconds |
+./spec/models/user_spec.rb[1:1:7]                                        | passed  | 0.00387 seconds |
+./spec/models/user_spec.rb[1:2:1]                                        | passed  | 0.06857 seconds |
+./spec/requests/dashboard_spec.rb[1:1:1]                                 | pending | 0.00001 seconds |
 ./spec/requests/home_spec.rb[1:1:1]                                      | pending | 0 seconds       |
-./spec/requests/two_factor_authentication/confirmations_spec.rb[1:1:1]   | passed  | 0.81144 seconds |
-./spec/requests/two_factor_authentication/confirmations_spec.rb[1:2:1:1] | passed  | 0.13276 seconds |
-./spec/requests/two_factor_authentication/recovery_codes_spec.rb[1:1:1]  | passed  | 0.06513 seconds |
-./spec/requests/two_factor_authentication/recovery_codes_spec.rb[1:2:1]  | passed  | 0.00657 seconds |
-./spec/requests/two_factor_authentications_spec.rb[1:1:1]                | passed  | 0.01773 seconds |
-./spec/requests/two_factor_authentications_spec.rb[1:2:1]                | passed  | 0.09728 seconds |
-./spec/requests/two_factor_authentications_spec.rb[1:3:1]                | passed  | 0.00867 seconds |
+./spec/requests/two_factor_authentication/confirmations_spec.rb[1:1:1]   | passed  | 0.81578 seconds |
+./spec/requests/two_factor_authentication/confirmations_spec.rb[1:2:1:1] | passed  | 0.36434 seconds |
+./spec/requests/two_factor_authentication/recovery_codes_spec.rb[1:1:1]  | passed  | 0.0569 seconds  |
+./spec/requests/two_factor_authentication/recovery_codes_spec.rb[1:2:1]  | passed  | 0.00603 seconds |
+./spec/requests/two_factor_authentications_spec.rb[1:1:1]                | passed  | 0.01843 seconds |
+./spec/requests/two_factor_authentications_spec.rb[1:2:1]                | passed  | 0.08739 seconds |
+./spec/requests/two_factor_authentications_spec.rb[1:3:1]                | passed  | 0.01432 seconds |
